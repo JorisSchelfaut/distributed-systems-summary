@@ -1,0 +1,43 @@
+\chapter{Introduction}
+
+A distributed system consists out of components that reside on different machines and communicate through message passing. This definition introduces three notable challenges:
+
+\begin{enumerate}
+	\item The lack of a global clock is largely resolved by coordinating actions through messages, but has its limitations.
+	\item The nodes within this system may also fail independently and may even go undetected.
+	\item Concurrency of operations brings another challenge as resources may be accessed simultanously, possibly introducing inconsistencies.
+\end{enumerate}
+
+Although these constraints make distributed systems complex to design, they come with significant benefits as well. The main motivation for developing and using distributed systems is resource sharing.
+
+Middleware is the layer between architecture and application. It introduces an abstraction layer to build distributed applications, hiding the heterogeneity of the underlying architectural elements, e.g. protocols, servers, operating systems and so on. Middleware technology may be provide certain services such as distribution, security, ... [1]
+
+\section*{Overview}
+
+The following topics are addressed in this text:
+
+\begin{itemize}
+	\item \textbf{Direct communication} : This article discusses protocols and paradigms for direct communication in distributed systems such as remote procedure call and remote method invocation.
+	\item \textbf{Indirect communication} : This article discusses protocols and paradigms for indirect communication in distributed systems such as group communication, message queues and publish-subscribe systems.
+	\item \textbf{Distributed file systems} : This article gives an introduction to distributed file systems such as Sun NFS and the Andrew File System.
+	\item \textbf{Distributed transactions} : This article gives an overview of some concepts related to distributed transactions such as distributed deadlock and commit protocols.
+	\item \textbf{Replication} : This article explains the basics of replication and gives an overview of the Coda file system.
+	\item \textbf{Cloud computing} : Introduction to cloud computing.
+\end{itemize}
+
+
+\section*{References}
+
+\begin{itemize}
+	\item [1] G. Coulouris, J. Dollimore, T. Kindberg and G. Blair, "Distributed Systems: Concepts and Design (5th Edition)", M. Horton, Red., Addison-Wesley, 2011, p. 1063.
+\end{itemize}
+
+
+
+\section*{Links}
+
+\begin{itemize}
+	\item http://docs.oracle.com/javase/7/docs/technotes/guides/rmi/ : Java RMI overview by Oracle;
+	\item http://docs.oracle.com/javaee/5/tutorial/doc/docinfo.html : JEE tutorial by Oracle;
+	\item https://developers.google.com/appengine/docs/java/ : Google App Engine Java overview.
+\end{itemize}
